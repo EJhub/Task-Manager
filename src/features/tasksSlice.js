@@ -2,12 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState ={
-    tasks:[{
-        id:1,
-        title:'task1',
-        description:'des2',
-        completed:false
-    }]
+    tasks:[]
 }
 
 
