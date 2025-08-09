@@ -1,0 +1,163 @@
+.TaskContainer{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #42f545, #089700);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto;
+}
+
+.TaskHeaderr{
+    margin-top: 100px;
+    color: #fff;
+}
+
+.Tasks{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 tasks per row */
+    gap: 20px;
+    padding: 20px;
+    max-height: auto;
+}
+
+.TaskLists{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 260px;
+    height: 290px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.title{
+   margin: 30px;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.button{
+    width:70px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.button:hover{
+    background-color: rgb(247, 207, 155);
+    transition: all 0.3s ease;
+}
+
+.Add{
+    position: relative;
+    right: -680px;
+    top: -35px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border: none;
+    font-weight: 500;
+}
+
+.Add:hover{
+    background-color: rgb(247, 207, 155);
+    transition: all 0.3s ease;
+}
+
+/* Edit Mode Styles */
+.editInput {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: aliceblue;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.editInput:focus {
+    outline: none;
+    border-color: #42f545;
+}
+
+.editTextarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: aliceblue;
+    text-align: center;
+    resize: none;
+    min-height: 40px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.editTextarea:focus {
+    outline: none;
+    border-color: #42f545;
+}
+
+.editButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.editButton {
+    width: 70px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.updateButton {
+    background-color: antiquewhite;
+}
+
+.updateButton:hover {
+    background-color: rgb(247, 207, 155);
+}
+
+.cancelButton {
+    background-color: antiquewhite;
+}
+
+.cancelButton:hover {
+    background-color: rgb(247, 207, 155);
+}
+
+

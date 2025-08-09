@@ -1,0 +1,43 @@
+.NavContainer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.Logo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 60px;
+}
+
+.ListContainer{
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+}
+.li{
+    padding: 15px 20px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.li:hover{
+    background-color: #0b8600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
